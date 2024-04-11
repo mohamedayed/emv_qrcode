@@ -17,8 +17,8 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 publishing {
     publications {
         create("bar", MavenPublication::class) {
-            groupId = "com.nizk"
-            artifactId = "emvqrcode"
+            groupId = "com.nizk.mohamedayed"
+            artifactId = "emv-qrcode"
             version = "1.0.0"
             from(components["java"])
         }

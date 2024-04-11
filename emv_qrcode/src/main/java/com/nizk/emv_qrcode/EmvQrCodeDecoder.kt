@@ -9,7 +9,7 @@ package com.nizk.emv_qrcode
  * Last Updated: 11 April 2024
  * Version: 1.0.0
  * License: MIT License
- * GitHub: https://github.com/YourGitHubUsername/YourRepositoryName
+ * GitHub: https://github.com/mohamedayed/emv_qrcode/
  *
  * Notes:
  * This decoder handles the parsing and mapping of EMV QR code data elements into a structured format.
