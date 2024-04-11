@@ -14,10 +14,10 @@
 ### Maven 
 ```
 <dependency>
-    <groupId>com.nizk</groupId>
-    <artifactId>emvqrcode</artifactId>
-    <version>1.0.0</version>
-   </dependency>
+  <groupId>com.nizk.mohamedayed</groupId>
+  <artifactId>emv-qrcode</artifactId>
+  <version>1.0.0</version>
+</dependency>
 ```
 ## Usage
 
