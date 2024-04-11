@@ -20,7 +20,16 @@
    </dependency>
 ```
 ## Usage
+
+## Scanning QR Codes
+This library is designed to decode EMV QR codes into structured data. You can scan the QR code using any QR code reader library available for Android. Here are a few popular libraries you can use:
+- [ZXing Android Embedded](https://github.com/journeyapps/zxing-android-embedded): A popular QR code scanning library for Android.
+- [Barcode Scanner by ZXing Team](https://github.com/zxing/zxing): The official ZXing (Zebra Crossing) library for barcode and QR code scanning.
+- [Google Mobile Vision](https://developers.google.com/vision/android/barcodes-overview): Part of Google Play services, provides barcode and QR code scanning capabilities.
+
+
 ## EMV QR Code Decoder
+Once you have scanned the QR code and obtained the `qrCodeString`, you can create an instance of the `EmvQrCodeDecoder` as follows:
 
 ```
 // Create an instance of the EMV QR Code Decoder
