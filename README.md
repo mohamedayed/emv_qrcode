@@ -18,7 +18,7 @@ repositories {
 ```
 ```
 dependencies {
-	        implementation 'com.github.mohamedayed:emv_qrcode:Tag'
+	        implementation 'com.github.mohamedayed:emv_qrcode:1.0.1'
 	}
 ```
 ### Maven 
