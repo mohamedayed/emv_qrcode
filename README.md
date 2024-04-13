@@ -11,7 +11,6 @@
 
 ## Installation
 
-### JitPack IO
 ```
 repositories {
 			maven { url 'https://jitpack.io' }
