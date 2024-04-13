@@ -95,7 +95,9 @@ if (isValid) {
     println("QR code is invalid.")
 }
 ```
-
+### Update: 
+Our library now supports decoding of Merchant Presented Mode (MPM) EMV QR codes, providing robust and efficient tools for handling QR code payments in various merchant scenarios. Looking ahead, we are excited to announce that in upcoming releases, we will extend our support to include Consumer Presented Mode (CPM). This enhancement will broaden our library's applicability, making it even more versatile for different payment environments.
+![HOW MPM works.](https://ibb.co/2t5ZgQ6)
 ## Contributing
 
 Contributions to this library are welcome! If you encounter any issues or have suggestions for improvements, 
