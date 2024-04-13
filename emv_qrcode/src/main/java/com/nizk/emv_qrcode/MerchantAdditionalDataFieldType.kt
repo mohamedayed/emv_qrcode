@@ -20,7 +20,7 @@ enum class MerchantAdditionalDataFieldType {
     BILL_NUMBER,
     MOBILE_NUMBER,
     STORE_LABEL,
-    LOYALITY_NUMBER,
+    LOYALTY_NUMBER,
     REFERENCE_LABEL,
     CUSTOMER_LABEL,
     TERMINAL_LABEL,
