@@ -2,7 +2,8 @@
 > The EMV QR Code Decoder Library is a Kotlin-based utility that decodes EMV QR codes into structured data.
 > It provides classes and enums to parse the QR code string, extract individual data elements, and construct an object with the parsed information.
 
-##Compatibility : Our library now supports Android and any language that runs on the JVM
+## Compatibility 
+ Our library supports Android and any language that runs on the JVM
 
 ## Features
  - Decode EMV QR codes into structured data
