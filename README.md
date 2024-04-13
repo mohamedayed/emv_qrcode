@@ -14,7 +14,6 @@
 ### JitPack IO
 ```
 repositories {
-			mavenCentral()
 			maven { url 'https://jitpack.io' }
 		}
 ```
