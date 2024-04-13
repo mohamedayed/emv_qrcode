@@ -49,9 +49,39 @@ val decoder = EmvQrCodeDecoder(qrCodeString)
 val decodedData = decoder.decode()
 
 // Access individual data elements
-val merchantName = decodedData.merchantName
-val transactionAmount = decodedData.transactionAmount
-// Add more data access examples here
+        val decoder = EmvQrCodeDecoder(Constants.qrcode)
+        val decodedData = decoder.decode()
+
+// Access the decoded data directly from the `decodedData` variable
+        val countryCode = decodedData.countryCode
+        val merchantCity = decodedData.merchantCity
+        val merchantCategoryCode = decodedData.merchantCategoryCode
+        val merchantName = decodedData.merchantName
+        val postalCode = decodedData.postalCode
+        val transactionAmount = decodedData.transactionAmount
+        val transactionCurrency = decodedData.transactionCurrency
+
+// Accessing merchant account information
+        val merchantAccountInfo = decodedData.merchantAccountInformation
+        val merchantId = merchantAccountInfo.get(MerchantInfoType.MERCHANT_ID)
+        val networkId = merchantAccountInfo.get(MerchantInfoType.NETWORK_ID)
+
+// Accessing merchant information in alternative Preference language
+        val merchantInformationLanguageInfo = decodedData.merchantInformationLanguage
+        val merchantCityAltLang = merchantInformationLanguageInfo.get(MerchantInformationLanguageType.MERCHANT_CITY_ALTER_LANG)
+        val languagePreference = merchantInformationLanguageInfo.get(MerchantInformationLanguageType.LANGUAGE_PREF)
+        val merchantNameAltLang = merchantInformationLanguageInfo.get(MerchantInformationLanguageType.MERCHANT_NAME_ALTER_LANG)
+
+// Accessing additional data fields
+        val additionalDataField = decodedData.additionalDataFieldTemplate
+        val loyaltyNumber = additionalDataField.get(MerchantAdditionalDataFieldType.LOYALTY_NUMBER)
+        val billNumber = additionalDataField.get(MerchantAdditionalDataFieldType.BILL_NUMBER)
+        val customerLabel = additionalDataField.get(MerchantAdditionalDataFieldType.CUSTOMER_LABEL)
+        val mobileNumber = additionalDataField.get(MerchantAdditionalDataFieldType.MOBILE_NUMBER)
+        val referenceLabel = additionalDataField.get(MerchantAdditionalDataFieldType.REFERENCE_LABEL)
+        val purposeOfTransaction = additionalDataField.get(MerchantAdditionalDataFieldType.PURPOSE_OF_TRANSACTION)
+        val storeLabel = additionalDataField.get(MerchantAdditionalDataFieldType.STORE_LABEL)
+        val terminalLabel = additionalDataField.get(MerchantAdditionalDataFieldType.TERMINAL_LABEL)
 ```
 ## CRC Validator
 
