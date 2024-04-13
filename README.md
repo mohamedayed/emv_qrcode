@@ -10,7 +10,19 @@
  - Utility functions for data validation and CRC calculation
 
 ## Installation
-   
+
+### JitPack IO
+```
+repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+```
+```
+dependencies {
+	        implementation 'com.github.mohamedayed:emv_qrcode:Tag'
+	}
+```
 ### Maven 
 ```
 <dependency>
